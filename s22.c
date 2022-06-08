@@ -24,7 +24,7 @@ int main()
 				printf("Enter element: ");
 				scanf("%d",&entry);
 				struct node *input;
-				input=(struct node*)malloc(sizeof(struct node));
+				input=(struct node*)malloc(sizeof(struct node));          //top is lowesr
 				input->data=entry;
 				if(top==NULL)
 				{
