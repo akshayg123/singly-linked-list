@@ -24,7 +24,7 @@ int main()
 				printf("Enter element: ");
 				scanf("%d",&entry);
 				struct node *input;
-				input=(struct node*)malloc(sizeof(struct node));          //top is lowest
+				input=(struct node*)malloc(sizeof(struct node));          
 				input->data=entry;
 				if(top==NULL)
 				{
@@ -49,7 +49,7 @@ int main()
 				{
 					struct node *temp=top;
 					int tempdata =top->data;
-					top=top->next;
+					top=top->next;                                 //top is lowest
 					free(temp);
 					printf("Popped element is %d\n",tempdata);
 				}
